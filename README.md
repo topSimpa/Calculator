@@ -4,11 +4,14 @@ This is project is part of the requirement of completeting the odin project foun
 
 ## Features
 It can perform basic math operations such as <br>
- - add - subtract - multiply - divide
+ * add 
+ * subtract
+ * multiply
+ * divide
 
 It features key buttons for entering digits, operators and clearing screen
 
-**The live Calculator could be accessed here [Calculator app]() **
+__The live Calculator could be accessed here [Calculator app]()__
 
 ## Usage
 
