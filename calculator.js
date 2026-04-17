@@ -2,7 +2,26 @@
 
 let firstInput;
 let secondInput;
-let operator;
+let operatorInput;
+
+let operators = [
+    {
+        symbol: "+",
+        operation: add,
+    },
+    {
+        symbol: "-",
+        operation: subtract,
+    },
+    {
+        symbol: "&times",
+        operation: multiply,
+    },
+    {
+        symbol: "&divide",
+        operation: divide,
+    }
+]
 
 function add(first, second) {
     const sum  = first + second;
@@ -26,3 +45,19 @@ function divide(dividend, divisor) {
     return (quotient);
 }
 
+
+function operate(operatorInput, firstInput, secondInput) {
+    let operation;
+
+    for (let operator of operators) {
+        if (operator.symbol ===  operatorInput) {
+            operation = operator.operation;
+        }
+    }
+    return (operation(firstInput, secondInput));
+
+}
+
+function updateInput(input) {
+    firstInput = input;
+}
