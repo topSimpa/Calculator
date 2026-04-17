@@ -11,7 +11,7 @@ It can perform basic math operations such as <br>
 
 It features key buttons for entering digits, operators and clearing screen
 
-__The live Calculator could be accessed here [Calculator app]()__
+_*The live Calculator could be accessed here [Calculator app]()*_
 
 ## Usage
 
