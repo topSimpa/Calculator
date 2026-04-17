@@ -1,8 +1,12 @@
-//Fixed-Program Application
+let digitButtons = document.querySelectorAll(".digit");
+let operatorButtons = document.querySelectorAll(".operator.arit")
+let equalsButton = document.querySelector("#equals-to")
+const screen = document.querySelector("#screen");
 
-let firstInput;
-let secondInput;
-let operatorInput;
+
+let firstInput = null;
+let secondInput = null;
+let operatorInput = null;
 
 let operators = [
     {
@@ -45,6 +49,11 @@ function divide(dividend, divisor) {
     return (quotient);
 }
 
+function display(number) {
+    screen.maxlength = number.length;
+    screen.value = number;
+}
+
 
 function operate(operatorInput, firstInput, secondInput) {
     let operation;
@@ -54,10 +63,47 @@ function operate(operatorInput, firstInput, secondInput) {
             operation = operator.operation;
         }
     }
-    return (operation(firstInput, secondInput));
+    return operation(firstInput, secondInput);
 
 }
 
 function updateInput(input) {
-    firstInput = input;
+    if (!firstInput) {
+        firstInput = Number(input);
+    } else if (!secondInput) {
+        secondInput = Number(input);
+    }
 }
+
+
+function equals() {
+    const result = operate(operatorInput, firstInput, secondInput);
+    display(`${result}`);
+}
+
+digitButtons.forEach(
+    (button) => {
+        button.addEventListener("click", 
+            () => {
+                let number = button.textContent;
+                console.log(number)
+                updateInput(number);
+                display(number)
+            }
+        )
+    }
+);
+
+operatorButtons.forEach(
+    (button) => {
+        button.addEventListener("click",
+            () => {
+                operatorInput = button.textContent
+                console.log(operatorInput);
+            }
+        )
+    }
+)
+
+
+equalsButton.addEventListener("click", equals)

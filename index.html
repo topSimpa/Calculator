@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator-App</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./calculator.js" defer></script>
 </head>
 <body>
     <div id="calculator-container">
-        <input>
+        <input id="screen" maxlength="1">
         <div id="buttons-container">
             <div id="main-buttons">
-                <button class="operator">&times</button>
-                <button class="operator">&divide</button>
+                <button class="operator arit">&times</button>
+                <button class="operator arit">&divide</button>
                 <button class="operator clear">C</button>
                 <button class="digit">9</button>
                 <button class="digit">8</button>
@@ -29,9 +30,9 @@
             </div>
             <div id="side-buttons">
                 <button class="operator clear">⌫</button>
-                <button class="operator">+</button>
-                <button class="operator">-</button>
-                <button class="operator bigger">=</button>
+                <button class="operator arit">+</button>
+                <button class="operator arit">-</button>
+                <button id="equals-to" class="operator bigger">=</button>
             </div>
         </div>
         <div id="autors-credit">powered by &#169;topSimpa<br>TheOdinProject</div>

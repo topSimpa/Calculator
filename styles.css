@@ -22,6 +22,7 @@ input {
     border: 1px solid black;
     border-radius: 8px;
     font-size: 32px;
+    text-align: right;
 }
 
 #buttons-container{
@@ -42,11 +43,21 @@ button {
     height: 80px;
     border-radius: 8px;
     background-color: white;
-    
+    cursor: pointer;
 }
 
 .operator {
     color: rgb(50, 224, 50);
+}
+
+.operator:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.digit:hover {
+    background-color: rgb(50, 224, 50);
+    color: white;
 }
 
 #side-buttons {
