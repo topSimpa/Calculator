@@ -13,20 +13,20 @@ This is project is part of the requirement of completeting the odin project foun
 
 - It has an active keyboard support for entering inputs
 
-_*The live Calculator could be accessed here [Calculator app]()*_
+_*The live Calculator could be accessed here [Calculator app](https://topsimpa.github.io/Calculator/)*_
 
 ## Usage
 - Enter Input using the on-screen buttons or keyboard equivalent keys
 
 - Enter a [number] [operator] [number] in that format
 - Entering an operator either
-    1) produces a result of a previous operation and waits for another input
-    2) Change a previous operator
-    3) No Change (if no number input is entered)
+    * produces a result of a previous operation and waits for another input
+    * Change a previous operator
+    * No Change (if no number input is entered)
 
 - press C to clear screen
 - press ⌫ to remove one character to the right
-- Result with Decimals are rounded to two Decimal places
+- result with decimals are rounded to two Decimal places
 
 ## Objective
 - to demonstrate skills in basic HTML and web scripting
