@@ -19,6 +19,7 @@ body {
 
 input {
     height: 50px;
+    padding: 4px;
     border: 1px solid black;
     border-radius: 8px;
     font-size: 32px;
